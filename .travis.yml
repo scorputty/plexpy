@@ -1,0 +1,19 @@
+sudo: required
+
+services:
+  - docker
+
+install:
+  - docker build --rm --no-cache -t cryptout/plexpy ../plexpy
+
+script:
+  - ./rundocker.sh
+
+after_success:
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then
+    docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
+    docker push cryptout/plexpy:latest;
+    fi
+
+notifications:
+  email: false
