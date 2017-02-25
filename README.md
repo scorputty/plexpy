@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/scorputty/plexpy.svg?branch=master)](https://travis-ci.org/scorputty/plexpy) [![](https://images.microbadger.com/badges/image/cryptout/plexpy.svg)](https://microbadger.com/images/cryptout/plexpy "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/cryptout/plexpy.svg)](https://microbadger.com/images/cryptout/plexpy "Get your own version badge on microbadger.com")
 
-# Docker plexpy (Alpine)
+# Docker PlexPy (Alpine)
 
 This is a Dockerfile to build "plexpy" - (https://github.com/JonnyWong16/plexpy/).
 
