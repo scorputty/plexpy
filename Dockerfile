@@ -37,13 +37,6 @@ RUN \
 # update certificates
  update-ca-certificates && \
 
-# install pip packages
- pip install --upgrade pip && \
- pip install --no-cache-dir -U \
-       setuptools && \
- pip install --no-cache-dir -U \
-       pyopenssl cryptography cheetah mako lockfile ndg-httpsclient notify pyasn1 requirements tzlocal && \
-
 # get plexpy and update is now in start.sh
  git clone --depth 1  https://github.com/drzoidberg33/plexpy.git /opt/plexpy && \
 

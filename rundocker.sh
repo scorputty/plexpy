@@ -6,7 +6,7 @@ VOL_SHARE="/Volumes/shares/docker/"
 test -d ${VOL_SHARE} || VOL_SHARE="${PWD}${VOL_SHARE}" && mkdir -p ${VOL_SHARE}/config/plexpy
 
 docker run -d -h $(hostname) \
-    -p 8081:8081 \
+    -p 8181:8181 \
     -v ${VOL_SHARE}:/share \
     -e TZ="Europe/Amsterdam" \
     -e appUser="media" \

@@ -11,4 +11,4 @@ cd /opt/plexpy
 git pull origin
 
 # start plexpy
-/usr/bin/python python PlexPy.py --nolaunch --datadir=/share/config/plexpy
+/usr/bin/python PlexPy.py --nolaunch --datadir=/share/config/plexpy
